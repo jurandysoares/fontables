@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="fontables.js"></script>
+</head>
+<body>
+    <h1>Fontables</h1>
+    <fieldset>
+        <legend>Marque as tabelas onde pode-se encontrar seu número</legend>
+
+        <div>
+            <input type="checkbox" name="tabela1" id="t1">
+            <br>
+            <img src="imagens/tabela_01.png" alt="Tabela 1">
+            <!-- <label for="1">Tabela 1</label> -->
+        </div>
+        <div>
+            <input type="checkbox" name="tabela2" id="t2">
+            <br>
+            <img src="imagens/tabela_02.png" alt="Tabela 2">
+            <!-- <label for="2">Tabela 2</label> -->
+        </div>
+        <div>
+            <input type="checkbox" name="tabela4" id="t4">
+            <br>
+            <img src="imagens/tabela_04.png" alt="Tabela 4">
+            <!-- <label for="4">Tabela 4</label> -->
+        </div>
+        <div>
+            <input type="checkbox" name="tabela8" id="t8">
+            <br>
+            <img src="imagens/tabela_08.png" alt="Tabela 8">
+            <!-- <label for="8">Tabela 8</label> -->
+        </div>
+        <div>
+            <input type="checkbox" name="tabela16" id="t16">
+            <br>
+            <img src="imagens/tabela_16.png" alt="Tabela t">
+            <!-- <label for="16">Tabela 16</label> -->
+        </div>
+    </fieldset>
+    <p><button onclick="soma_ids()">Adivinhar número</button></p>
+    <div id="resultado">
+        <p id="p_resultado">Seu número é: <span id="resultado">?</span></p>
+    </div>
+</body>
+</html>
