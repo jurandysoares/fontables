@@ -15,3 +15,32 @@ function soma_ids() {
     resultado = document.getElementById('resultado');
     resultado.innerHTML = soma;
 }
+
+document.querySelectorAll(".checkbox").forEach(componente => {
+    componente.addEventListener("click",(event)=>{
+        let checkbox = event.target;
+        let idDiv  = '#d' + checkbox.id;
+        let div = document.querySelector(idDiv);
+        if (checkbox.checked) {
+            div.style.backgroundColor = 'grey';
+        }
+        else {
+            div.style.backgroundColor = 'white';
+        }
+    })
+});
+
+
+
+/*
+function selecionar(event){
+    let checkbox = event.target;
+    let idDiv  = '#d' + checkbox.id;
+    let div = document.querySelector(idDiv);
+    if (checkbox.checked) {
+        div.style.backgroundColor = 'grey';
+    }
+    else {
+        div.style.backgroundColor = 'white';
+    }
+}*/
